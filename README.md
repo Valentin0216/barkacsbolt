@@ -5,3 +5,6 @@ Csapat: Gavlik Gábor ---> Képek
         Simon Valentin Márk ---> CSS
         
 Weboldal elérése: https://valentin0216.github.io/barkacsbolt/
+
+
+szia
