@@ -19,3 +19,15 @@ nav a{
 nav a:hover{
     color: white;
 }
+
+#oldal{
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 15px;
+    margin-left: 15px;
+}
+
+img{
+    float: right;
+    border: white;
+    border-radius: 80%;
+}
