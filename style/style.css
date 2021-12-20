@@ -1,3 +1,7 @@
+body, html{
+    height: 100%;
+}
+
 h1{
     text-align: center;
 }
@@ -22,12 +26,26 @@ nav a:hover{
 
 #oldal{
     background-color: rgba(255, 255, 255, 0.5);
-    margin-left: 15px;
+    /* margin-left: 15px; */
+    margin-right: 15px;
+}
+
+#oldal p{
     margin-left: 15px;
 }
 
 img{
-    float: right;
-    border: white;
     border-radius: 80%;
+    border: white 10px 10px;
+    float: right;
+    width: 300px;
+    margin-right: 15px;
+}
+
+p{
+    font-size: 120%;
+}
+
+table{
+    width: 100%;
 }
