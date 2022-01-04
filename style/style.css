@@ -49,3 +49,9 @@ p{
 table{
     width: 100%;
 }
+
+/*Festékek oldal*/
+
+.kepek-border{
+    border: 1px solid black;
+}
