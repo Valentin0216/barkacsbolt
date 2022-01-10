@@ -6,3 +6,4 @@ Csapat: Gavlik Gábor ---> Képek
         
 Weboldal elérése: https://valentin0216.github.io/barkacsbolt/barkacsbolt.html
 
+asdas
