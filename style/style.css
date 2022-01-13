@@ -80,7 +80,8 @@ table{
 
 #bukk{
     height: 250px;
-    border-radius: 200px;
+    width: 250px;
+    border-radius: 80%;
 }
 
 .faanyagok a:hover{
@@ -103,7 +104,7 @@ table{
 }
 
 #faoldal{
-    height: 100%;
+    height: max-content;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
