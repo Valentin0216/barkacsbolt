@@ -70,9 +70,51 @@ table{
     margin-left: 1px;
 }
 
+/*Faanyagok CSS*/
+.faanyagok img{
+    height: 250px;
+    border-radius: 150px;
+    margin-bottom: 10px;
+}
+
+#bukk{
+    height: 250px;
+    border-radius: 200px;
+}
+
+.faanyagok a:hover{
+    color: black;
+    background-color: rgba(30, 144, 255, 0.7);
+}
+
+.faanyagok-box{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.faanyagok-box a{
+    text-decoration: none;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#faoldal{
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*Szövegek a faanyagoknál*/
+
+.szovegek{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 /*Telefonos navbar*/
 
-/* Style the navigation menu */
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -80,12 +122,10 @@ table{
     display: none;
   }
   
-  /* Hide the links inside the navigation menu (except for logo/home) */
   .topnav #myLinks {
     display: none;
   }
   
-  /* Style navigation menu links */
   .topnav a {
     color: white;
     padding: 14px 16px;
@@ -94,7 +134,6 @@ table{
     display: block;
   }
   
-  /* Style the hamburger menu */
   .topnav a.icon {
     background: black;
     display: block;
@@ -103,13 +142,11 @@ table{
     top: 0;
   }
   
-  /* Add a grey background color on mouse-over */
   .topnav a:hover {
     background-color: #ddd;
     color: black;
   }
   
-  /* Style the active link (or home/logo) */
   .active {
     background-color: darkblue;
     color: white;
@@ -122,5 +159,21 @@ table{
 
     .topnav{
         display: block;
+    }
+
+    .faanyagok a{
+        text-align: center;
+        display: block;
+        width: 30%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .faanyagok a{
+        text-align: center;
+        display: block;
+        width: 30%;
+        margin: auto;
     }
 }
