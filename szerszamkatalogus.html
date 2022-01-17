@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="style/script.js"></script>
+    <title>Szerszámkatalógus</title>
+</head>
+
+<body style="background-image: url(img/fooldal_hatterkep.jpg); background-size: cover;">
+
+    <button onclick="iranyFel()" id="fel_gomb" title="Irány az oldal tetejére!">↑</button>
+
+    <nav>
+        <a href="barkacsbolt.html">Főoldal</a>
+        <a href="festetek.html">Festékek</a>
+        <a href="faanyagok.html">Faanyagok</a>
+        <a href="szerszamkatalogus.html">Szerszámkatalógus</a>
+        <a href="rolunk.html">Rólunk</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+
+    <div class="topnav">
+        <a href="barkacsbolt.html" class="active">Szerszámkatalógus</a>
+        <div id="myLinks">
+            <a href="barkacsbolt.html">Főoldal</a>
+            <a href="festetek.html">Festékek</a>
+            <a href="faanyagok.html">Faanyagok</a>
+            <a href="szerszamkatalogus.html">Szerszámkatalógus</a>
+            <a href="rolunk.html">Rólunk</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <br>
+
+    <div id="szerszamoldal">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-4 col-xl-4">
+                    <div class="szerszamok">
+                        <h1>Kalapács</h1>
+                        <img src="img/kalapacs.png" alt="Kalapács" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 col-xl-4">
+                    <div class="szerszamok">
+                        <h1>Favéső</h1>
+                        <img src="img/faveso.png" alt="Favéső" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 col-xl-4">
+                    <div class="szerszamok">
+                        <h1>Fűrész</h1>
+                        <img src="img/furesz.png" alt="Fűrész" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 col-xl-4">
+                    <div class="szerszamok">
+                        <h1>Mérőszalag</h1>
+                        <img src="img/meroszalag.png" alt="Mérőszalag" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 col-xl-4">
+                    <div class="szerszamok">
+                        <h1>Ráspoly</h1>
+                        <img src="img/raspoly.png" alt="Ráspoly" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 col-xl-4">
+                    <div class="szerszamok">
+                        <h1>Vonókés</h1>
+                        <img src="img/vonokes.png" alt="Vonókés" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+mybutton = document.getElementById("fel_gomb");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 580 || document.documentElement.scrollTop > 580) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function iranyFel() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+</script>
