@@ -13,6 +13,8 @@
 
 <body style="background-image: url(img/fooldal_hatterkep.jpg);">
 
+    <button onclick="iranyFel()" id="fel_gomb" title="Irány az oldal tetejére!">↑</button>
+
     <nav>
         <a href="barkacsbolt.html">Főoldal</a>
         <a href="festetek.html">Festékek</a>
@@ -72,3 +74,22 @@
         </div>
     </div>
 </body>
+
+<script>
+    mybutton = document.getElementById("fel_gomb");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 580 || document.documentElement.scrollTop > 580) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function iranyFel() {
+      document.body.scrollTop = 0; 
+      document.documentElement.scrollTop = 0; 
+    }
+</script>
