@@ -243,6 +243,20 @@ table{
     #faoldal{
         height: max-content;
     }
+
+    #gabor_page{
+        text-align: center;
+    }
+
+    #sanyi_page{
+        text-align: center;
+    }
+
+    #valen_page{
+        text-align: center;
+        height: 380px;
+    }
+
 }
 
 @media (max-width: 992px) {
