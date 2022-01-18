@@ -139,7 +139,41 @@ table{
 }
 
 /*Rólunk oldal*/
-.rolunk-box{
+.valaszto{
+    text-align: center;
+}
+
+.valaszto img{
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: black 4px 4px 6px 2px;
+}
+
+.valaszto button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    background-color: rgb(26, 72, 141);
+}
+
+.valaszto button:hover{
+    background-color: rgb(51, 101, 177);
+}
+.rp_gb{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    background-color: rgb(26, 72, 141);
+}
+
+.rp_gb:hover{
+    background-color: rgb(51, 101, 177);
+}
+
+/* .rolunk-box{
     height: 100%;
 }
 
@@ -148,7 +182,7 @@ table{
     border: 1px solid black;
     border-radius: 100px;
     box-shadow: black 5px 5px 10px 1px;
-}
+} */
 
 
 /*Telefonos navbar*/
