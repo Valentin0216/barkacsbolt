@@ -138,6 +138,19 @@ table{
     background-color: rgba(128, 128, 128, 0.6);
 }
 
+/*Rólunk oldal*/
+.rolunk-box{
+    height: 100%;
+}
+
+.rolunk-items img{
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 100px;
+    box-shadow: black 5px 5px 10px 1px;
+}
+
+
 /*Telefonos navbar*/
 
 .topnav {
