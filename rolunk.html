@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="style/script.js"></script>
+    <title>Rólunk</title>
+</head>
+<body style="background-image: url(img/fooldal_hatterkep.jpg);">
+    <button onclick="iranyFel()" id="fel_gomb" title="Irány az oldal tetejére!">↑</button>
+
+    <nav>
+        <a href="barkacsbolt.html">Főoldal</a>
+        <a href="festetek.html">Festékek</a>
+        <a href="faanyagok.html">Faanyagok</a>
+        <a href="szerszamkatalogus.html">Szerszámkatalógus</a>
+        <a href="rolunk.html">Rólunk</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+
+    <div class="topnav">
+        <a href="barkacsbolt.html" class="active">Rólunk</a>
+        <div id="myLinks">
+            <a href="barkacsbolt.html">Főoldal</a>
+            <a href="festetek.html">Festékek</a>
+            <a href="faanyagok.html">Faanyagok</a>
+            <a href="szerszamkatalogus.html">Szerszámkatalógus</a>
+            <a href="rolunk.html">Rólunk</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+<div id="faoldal">
+    <h1 id="rolunk_h1">Rólunk</h1>
+
+    <div class="container-fluid valaszto" id="rolunk">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 col-xl-4">
+                <h2>Gavlik Gábor</h2>
+                <img src="img/GG.png" alt="Gavlik Gábor" class="img-fluid">
+                <button id="gabor_gomb">További információk</button>
+            </div>
+            <div class="col-xs-12 col-md-4 col-xl-4">
+                <h2>Illés Sándor Dávid</h2>
+                <img src="img/Sányi.png" alt="Illés Sándor Dávid" class="img-fluid">
+                <button id="sanyi_gomb">További információk</button>
+            </div>
+            <div class="col-xs-12 col-md-4 col-xl-4">
+                <h2>Simon Valentin Márk</h2>
+                <img src="img/Valentinprogapro.png" alt="Simon Valentin Márk" class="img-fluid">
+                <button id="valen_gomb">További információk</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="gabor_page" style="display: none;">
+        <hr style="height: 10px; color: black;">
+        <h1 style="margin-top: 30px;">Gavlik Gábor</h1>
+        <img src="img/GG.png" alt="Gavlik Gábor" style="float: right; height: 400px; border: 3px solid black;">
+        <p style="margin-top: 10px; color: black; font-size: 30px;">Gábor kolléga szakterülete a grafikai munkák elvégzése. Tudását nem lehet űberelni, nem is érdemes próbálkozni. Nagyon elszánt a munkájával kapcsolatban, nincs olyan, amikor nincs kedve a projekthez. Kedvenc mondata: "jóvan az úgy, nekem tetszik" Ezen felül rendkívül segítőkész, nyugodtan rálehet bízni bármilyen kódolási feladatot is. :)</p>
+        <button id="vissza_gomb" class="rp_gb">Vissza</button>
+    </div>
+
+    <div class="container-fluid" id="sanyi_page" style="display: none;">
+        <hr style="height: 10px; color: black;">
+        <h1>Illés Sándor Dávid</h1>
+        <img src="img/Sányi.png" alt="Illés Sándor Dávid" style="float: right; height: 400px; border: 3px solid black;">
+        <p style="margin-top: 10px; color: black; font-size: 30px;">Sanyi kolléga szakterülete a html kód elkészítése. Munkafolyamatának sebessége felfoghatatlan, a bugatti veyron elbújhat Sanyi mellett. Legjobb barátja a google, dehát kinek nem? Egyenlőre mást nem tudunk mondani róla, mert most épp táppénzen van, így nem tudjuk megfigyelni szokásait.</p>
+        <button id="vissza_gomb2" class="rp_gb">Vissza</button>
+    </div>
+
+    <div class="container-fluid" id="valen_page" style="display: none;">
+        <hr style="height: 10px; color: black;">
+        <h1>Simon Valentin Márk</h1>
+        <img src="img/Valentinprogapro.png" alt="Illés Sándor Dávid" style="float: right; height: 400px; border: 3px solid black;">
+        <p style="margin-top: 10px; color: black; font-size: 30px;">Valentin kolléga szakterülete meghatározatlan, szinte minden érdekli. Egyik legjobb barátja a google, melyhez előszeretettel fordul, ha valamit nem tud megoldani. Képes kapkodni, ez miatt sokat kell javítani a hejjesirási hibakat. Kedvenc mondata a "bootstrap", és szerencsétlennek inviteles nete van.</p>
+        <button id="vissza_gomb3" class="rp_gb">Vissza</button>
+    </div>
+</div>
+
+</body>
+</html>
+
+<script>
+var g_button = document.getElementById('gabor_gomb');
+var s_button = document.getElementById('sanyi_gomb');
+var v_button = document.getElementById('valen_gomb');
+var main_oldal = document.getElementById('rolunk');
+
+// g_button.onclick = function() {
+//     var div = document.getElementById('gabor_page');
+//     if (div.style.display !== 'none') {
+//         div.style.display = 'none';
+//     }
+//     else {
+//         main_oldal.style.display = 'none';
+//         div.style.display = 'block';
+//     }
+// };
+
+g_button.onclick = function() {
+    var gabor_oldal = document.getElementById('gabor_page');
+    main_oldal.style.display = 'none';
+    // rolunk_h1.style.display = "none";
+    gabor_oldal.style.display = 'block';
+};
+
+s_button.onclick = function() {
+    var sanyi_oldal = document.getElementById('sanyi_page');
+    main_oldal.style.display = 'none';
+    sanyi_oldal.style.display = 'block';
+};
+
+v_button.onclick = function() {
+    var valen_oldal = document.getElementById('valen_page');
+    main_oldal.style.display = 'none';
+    valen_oldal.style.display = 'block';
+};
+
+var vissza_gomb = document.getElementById('vissza_gomb')
+vissza_gomb.onclick = function() {
+    var gp_vissza = document.getElementById('gabor_page');
+    main_oldal.style.display = 'block';
+    gp_vissza.style.display = 'none';
+};
+
+var vissza_gomb2 = document.getElementById('vissza_gomb2')
+vissza_gomb2.onclick = function() {
+    var sp_vissza = document.getElementById('sanyi_page');
+    main_oldal.style.display = 'block';
+    sp_vissza.style.display = 'none';
+};
+
+var vissza_gomb3 = document.getElementById('vissza_gomb3')
+vissza_gomb3.onclick = function() {
+    var vp_vissza = document.getElementById('valen_page');
+    main_oldal.style.display = 'block';
+    vp_vissza.style.display = 'none';
+};
+</script>
