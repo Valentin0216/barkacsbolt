@@ -254,9 +254,7 @@ table{
 
     #valen_page{
         text-align: center;
-        height: 380px;
     }
-
 }
 
 @media (max-width: 992px) {
