@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="style/script.js"></script>
+    <title>Főoldal</title>
+</head>
+
+<body style="background-image: url(img/fooldal_hatterkep.jpg);">
+
+    <button onclick="iranyFel()" id="fel_gomb" title="Irány az oldal tetejére!">↑</button>
+
+    <nav>
+        <a href="barkacsbolt.html">Főoldal</a>
+        <a href="festetek.html">Festékek</a>
+        <a href="faanyagok.html">Faanyagok</a>
+        <a href="szerszamkatalogus.html">Szerszámkatalógus</a>
+        <a href="rolunk.html">Rólunk</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+
+    <div class="topnav">
+        <a href="barkacsbolt.html" class="active">Főoldal</a>
+        <div id="myLinks">
+            <a href="barkacsbolt.html">Főoldal</a>
+            <a href="festetek.html">Festékek</a>
+            <a href="faanyagok.html">Faanyagok</a>
+            <a href="szerszamkatalogus.html">Szerszámkatalógus</a>
+            <a href="rolunk.html">Rólunk</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+<div id="oldal" class="container-fluid">
+<img src="img/vallakozok.jpg" alt="vallakozok" class="img-fluid">
+<h1>A történetűnk</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quos veritatis cum amet qui repellat quam? Ipsam, repellendus perferendis iusto cum atque et eveniet rerum voluptas. Dolorum consequatur consectetur dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, similique ipsam. Hic, ullam praesentium. Et incidunt impedit vero? Aliquid laboriosam reprehenderit minima soluta culpa eum numquam quas vitae, sint provident. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste voluptas ad ipsum blanditiis libero cumque, nam quidem id minima, delectus et quae. Sint laborum dicta aliquam, praesentium accusamus quia tenetur!
+</p>
+
+</div>
+</body>
+</html>
+
+<script>
+    mybutton = document.getElementById("fel_gomb");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 580 || document.documentElement.scrollTop > 580) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function iranyFel() {
+      document.body.scrollTop = 0; 
+      document.documentElement.scrollTop = 0; 
+    }
+</script>
