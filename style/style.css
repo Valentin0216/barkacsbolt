@@ -185,8 +185,26 @@ table{
 } */
 
 
-/*Telefonos navbar*/
+/*Blog oldal*/
+#blog_oldal{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    padding: 20px 20px;
+}
 
+#blog_oldal p{
+    text-align: justify;
+}
+
+#blog_oldal img{
+    float: right;
+}
+
+#blog_tartalom{
+    margin-top: 20%;
+}
+
+/*Telefonos navbar*/
 .topnav {
     overflow: hidden;
     background-color: #333;
