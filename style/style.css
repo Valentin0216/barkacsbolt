@@ -108,6 +108,7 @@ table{
     margin-right: 20px;
     margin-left: 20px;
     height: max-content;
+    height: 100%;
 }
 
 .faal_vissza{
@@ -204,7 +205,7 @@ table{
 /*Blog oldal*/
 #blog_oldal{
     background-color: rgba(255, 255, 255, 0.5);
-    height: 100%;
+    height: max-content;
     padding: 20px 20px;
 }
 
@@ -212,7 +213,7 @@ table{
     text-align: justify;
 }
 
-#blog_oldal img{
+/* #blog_oldal img{
     float: right;
 }
 
@@ -230,7 +231,7 @@ table{
 @keyframes vall_kep{
     0%   {height: 0px;}
     100% {height: 330px;}
-}
+} */
 
 
 /*Telefonos navbar*/
