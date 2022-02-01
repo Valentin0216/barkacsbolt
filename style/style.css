@@ -94,7 +94,7 @@ table{
     margin-bottom: 15px;
 }
 
-.faanyagok-box a{
+.fa_gomb{
     text-decoration: none;
     color: white;
     background-color: dodgerblue;
@@ -281,7 +281,7 @@ table{
         display: block;
     }
 
-    .faanyagok a{
+    .fa_gomb{
         text-align: center;
         display: block;
         width: 30%;
@@ -306,7 +306,7 @@ table{
 }
 
 @media (max-width: 992px) {
-    .faanyagok a{
+    .fa_gomb{
         text-align: center;
         display: block;
         width: 30%;
